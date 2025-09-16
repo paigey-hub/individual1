@@ -1,0 +1,117 @@
+/* Nav */
+nav ul { /*styling elements for the navbar*/
+    background-color: #323232;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul li a { /*styling elements for the text of the navbar*/
+    color: white;
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover { /*navbar turns a different color when hovering over it*/
+    background-color: #575757;
+}
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+body {
+    text-align: center;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+img.align-center {
+    margin: auto;
+    display: block;
+    padding: 20px;
+    width: 80%;
+    height: auto;
+}
+
+/* Gallery grid */
+.gallery-grid {
+  display: grid; /* Using a grid to display the images in rows and columns */
+  gap: 20px; /* space between images */
+  grid-template-columns: repeat(3, 1fr); /* 3 by 2 grid */
+  justify-items: center; /* center images inside grid cells */
+  padding: 20px; /* space around the grid */
+}
+
+.gallery-grid figure {
+  text-align: center; /* center the caption for each image */
+}
+
+.gallery-grid img {
+    height: auto; /*allows image to adjust size as window resizes*/
+    max-width: 100%;
+}
+
+/* Table styling */
+.schedule-table {
+    border: 1px solid black; /* outer border */
+    margin: 20px auto;    /* center table */
+    text-align: center; 
+    width: 80%;           /* table width is 80% of the screen*/
+
+}
+
+.schedule-table th,
+.schedule-table td {
+    background-color: #d5e8fc; /* light blue background */
+    border: 1px solid black; /* borders for cells */
+    padding: 8px;            /* space inside cells */
+
+}
+
+/* Form styling*/
+form {
+    background-color: #ebf8ff;
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 15px;
+    width: 60%;
+}
+
+form fieldset {
+    border: none;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    box-sizing: border-box; /* makes padding/borders not stretch the box */
+    width: 300px;   /* adjust all text boxes to be the same width */
+}
+
+/* Map Styling */
+
+iframe {
+    height: 40vh;  /* 40% of the viewport height */
+    width: 60vw;   /* 60% of the viewport width */
+}
+
+/* Footer */
+footer {
+    background-color: #a4a4a4;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Google font import */
+h1 { 
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+}

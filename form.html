@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <!-- Meta tags -->
+  <meta name="author" content="Paige Yu">
+  <meta name="description" content="Contact form for Carnegie Museum of Art website.">
+  <meta name="keywords" content="museum, contact, form">
+
+  <!-- External CSS -->
+  <link href="css/styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="images.html">Gallery</a></li>
+      <li><a href="table.html">Schedule</a></li>
+      <li><a href="form.html">Contact Us</a></li>
+      <li><a href="map.html">Map</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>We’d love to hear from you!</h2>
+    <p>Please fill out the form below with your information and message.</p>
+
+    <!-- Contact Form -->
+    <form action="#" method="post">
+      
+      <!-- Name -->
+      <p>
+        <label for="name">First and Last Name:</label><br>
+        <input type="text" id="name" name="name" required>
+      </p>
+
+      <!-- Email -->
+      <p>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+      </p>
+
+      <!-- Inquiry type (radio buttons) -->
+      <fieldset>
+        <legend>Message Type:</legend>
+        <label>
+          <input type="radio" name="inquiry" value="general" required>
+          Feedback
+        </label>
+        <label>
+          <input type="radio" name="inquiry" value="events">
+          Events
+        </label>
+        <label>
+          <input type="radio" name="inquiry" value="membership">
+          Other
+        </label>
+      </fieldset>
+
+      <!-- Dropdown -->
+      <p>
+        <label for="visit">Have you visited before?</label><br>
+        <select id="visit" name="visit">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </p>
+
+      <!-- Message box -->
+      <p>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40"></textarea>
+      </p>
+
+      <!-- Submit button-->
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Paige Yu | <a href="mailto:paigey@andrew.cmu.edu">paigey@andrew.cmu.edu</a></p>
+  </footer>
+</body>
+</html>
